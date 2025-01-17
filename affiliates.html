@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirtworks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html" class="content-button">Home</a>
+        </div> 
+
+        <div class="specials">
+            <span id="special-content"> </span>
+        </div>
+
+        <div class="social">
+            <a href="https://kfdirtworks.com/?fbclid=IwY2xjawHucMVleHRuA2FlbQIxMAABHcCaleI1UDxadmA0lzbSkDlSuJWH5HnyP275565ppOmz5xh718i1mu68zg_aem_hoCkmlYmx-aSSqKP7IhDFw" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-contact">
+            <h1>DIRT WORKS</h1>
+            <p>Collaborate, Innovate, Elevate – Our Partners Make It Possible.</p>
+        </div>
+
+        <div class="main-content">
+            <!-- Affiliates Section -->
+            <div class="section affiliates">
+                <h2>Our Affiliates</h2>
+                <p>Partnering with Businesses That Drive Our Success and Yours.</p>
+                <div class="card-list">
+                    <div class="card">
+                        <h3>Far North Self Storage WA</h3>
+                        <img src="images/logos/farnorth.png" alt="Far North Self Storage">
+                        <p>RV, Boat, Equipment, Self Storage and Drop & Hook Facility in Northport, WA</p> 
+                        <a href="https://www.farnorthselfstoragewa.com/" target="_blank" rel="noopener noreferrer">Visit Site</a>
+                    </div>
+                    <!-- Add more affiliate cards here -->
+                </div>
+            </div>
+
+            <!-- Stores Section -->
+            <div class="section stores">
+                <h2>Home and Garden Affiliates</h2>
+                <p>Explore our trusted stores for the best products.</p>
+                <div class="card-list">
+                    <!-- Populate only if there are stores -->
+                    <div class="card">
+                        <h3>Store 1</h3>
+                        <p>Address: 123 Main Street, City, State</p>
+                        <p>Available Products: [List of products]</p>
+                    </div>
+                    <div class="card">
+                        <h3>Store 2</h3>
+                        <p>Address: 456 Market Road, City, State</p>
+                        <p>Available Products: [List of products]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chatbot-container">
+            <div class="chatbot-tooltip" id="chatbot-tooltip">Hi! Need help? Click me!</div>
+            
+            <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+        
+            <div class="chatbot" id="chat-container">
+                <div class="chatbot-window" id="chat-window">
+                    <div id="messages"></div>
+                </div>
+                <div id="input-container">
+                    <input id="user-input" type="text" placeholder="Type your message...">
+                    <button id="send-button" onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </div>
+            
+    
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Inventory</h3>
+                <a href = "inventory.html" class = "content-button"> View Content</a>
+                <p>Showcase your projects and achievements.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Our Greenhouse</h3>
+                <a href = "shop.html" class = "content-button"> View Content</a>
+                <p>Brief information about who you are.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Services/Equipment</h3>
+                <a href = "services.html" class = "content-button"> View Content</a>
+                <p>List your key skills and expertise.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Affiliates</h3>
+                <a href = "affiliates.html" class = "content-button"> View Content</a>
+                <p>View the code for the projects.</p>  
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <a href = "contact.html" class = "content-button"> View Content</a>
+                <p>Provide your email or social links here.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="secondary-footer">
+        <p>&copy; 2025 Dirtworks. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirtworks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+
+</head>
+<body>
+    <header> 
+        <div class="logo">   <!-- Need to  create stop for specials to be added-->
+            <a href="" class="content-button">Home</a>
+        </div> 
+
+        <div class="specials">
+            <span id="special-content"> </span>
+        </div>
+
+
+        <div class="social">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/dirtworkskettlefalls" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </header>
+
+    <div class = "hero-index">
+        <h1>Welcome to Dirt Works</h1>
+        <p> BUILDING SOLUTIONS WITH DIRT AND ROCKS </p>
+        <!-- <a href = "/inventory.html"  class = "cta-button"> Enter Our Selections</a> -->
+
+        <div class="location">
+            <h2> Located at 764 Hwy 395 N Kettle Falls Wa 99141 <br> Phone : (509)738-2110</h2>
+        </div>
+
+        <div class="hours">
+            <h2> Hours of Opertation <br> Wednesday 9am - 5pm | Thursday 9am - 5pm | Friday 9am - 5pm | Saturday 9am - 5pm </h2>
+        </div>
+    </div>
+
+    <div class="chatbot-container">
+        <div class="chatbot-tooltip" id="chatbot-tooltip">Hi! Need help? Click me!</div>
+        
+        <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+    
+        <div class="chatbot" id="chat-container">
+            <div class="chatbot-window" id="chat-window">
+                <div id="messages"></div>
+            </div>
+            <div id="input-container">
+                <input id="user-input" type="text" placeholder="Type your message...">
+                <button id="send-button" onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Inventory</h3>
+                <a href = "inventory.html" class = "content-button"> View Content</a>
+                <p>Showcase your projects and achievements.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Our Greenhouse</h3>
+                <a href = "shop.html" class = "content-button"> View Content</a>
+                <p>Brief information about who you are.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Services/Equipment</h3>
+                <a href = "services.html" class = "content-button"> View Content</a>
+                <p>List your key skills and expertise.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Affiliates</h3>
+                <a href = "affiliates.html" class = "content-button"> View Content</a>
+                <p>View the code for the projects.</p>  
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <a href = "contact.html" class = "content-button"> View Content</a>
+                <p>Provide your email or social links here.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="secondary-footer">
+        <p>&copy; 2025 Dirtworks. All rights reserved.</p>
+    </footer>
+
+
+</body>
+<script src="js/script.js"></script>
+</html>

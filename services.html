@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dirtworks</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    
+</head>
+<body>
+    <header> 
+        <div class="logo">
+            <a href="index.html" class="content-button">Home</a>
+        </div> 
+
+        <div class="specials">
+            <span id="special-content"> </span>
+        </div>
+
+        <div class="social">
+            <a href="https://kfdirtworks.com/?fbclid=IwY2xjawHucMVleHRuA2FlbQIxMAABHcCaleI1UDxadmA0lzbSkDlSuJWH5HnyP275565ppOmz5xh718i1mu68zg_aem_hoCkmlYmx-aSSqKP7IhDFw" target="_blank" class="facebook">
+                <i class="fab fa-facebook"></i> Facebook
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero-contact">
+            <h1>DIRT WORKS</h1>
+            <p>From Start to Finish – The Equipment and Services to Get It Done.</p>
+        </div>
+
+        <main class="service-cards">
+            <div class="s-card">
+                <div class="s-card-icon">
+                    <img class="rock" src="images/logos/rocksoil.png" alt="Bark/Soil/Rock Icon">
+                </div>
+                <h2>Bark/Soil/Rock</h2>
+                <p>We offer a diverse selection of premium soil, bark, and rocks to meet the needs of our community—whether you're tackling a small DIY project, revitalizing your backyard, or managing large-scale road repairs.</p>
+            </div>
+
+            <div class="s-card">
+                <div class="s-card-icon">
+                    <img class="mack" src="images/logos/mack.png" alt="Delivery Truck Icon">
+                </div>
+            
+                <div class="truck-capacity">
+                    <h3>Dump Truck Capacity</h3>
+                    <ul>
+                        <p><strong>15-Yard Maximum:</strong> Dirt, Bark, Wood Chips, Soil Conditioner</p>
+                        <p><strong>10-Yard Maximum:</strong> Gravel, Rock, Sand, Fill</p>
+                    </ul>
+                </div>
+                
+                <div class="delivery-fees">
+                    <h3>Delivery Fees</h3>
+                    <ul>
+                        <p><strong>$100 Flat Fee:</strong> Within a 6-mile radius</p>
+                        <p><strong>$150/hour:</strong> For round-trip deliveries beyond 6 miles</p>
+                    </ul>
+                </div>
+            
+                <div class="additional-details">
+                    <h3>Additional Details</h3>
+                    <p>No minimum quantity required for delivery.</p>
+                    <p>Delivery fees remain the same regardless of order size.</p>
+                </div>
+            </div>
+            
+            <div class="s-card">
+                <div class="s-card-icon">
+                    <img class="cat" src="images/logos/cat.png" alt="Loading Icon">
+                </div>
+                <h2>Loading</h2>
+                <p>Choose the material you'd like to purchase, and we'll handle the loading for your truck or trailer—hassle-free! Stay comfortably 
+                    in your vehicle while we take care of everything. <br><br> For smaller quantities, materials are also available by the 5-gallon bucket. 
+                    Please remember to bring your own bucket, as we do not supply them</p>
+            </div>
+
+            <div class="chatbot-container">
+                <div class="chatbot-tooltip" id="chatbot-tooltip">Hi! Need help? Click me!</div>
+                
+                <button class="chatbot-toggle" onclick="toggleChatbot()">💬</button>
+            
+                <div class="chatbot" id="chat-container">
+                    <div class="chatbot-window" id="chat-window">
+                        <div id="messages"></div>
+                    </div>
+                    <div id="input-container">
+                        <input id="user-input" type="text" placeholder="Type your message...">
+                        <button id="send-button" onclick="sendMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+        
+            
+    
+    </main>
+
+    <footer>
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Inventory</h3>
+                <a href = "inventory.html" class = "content-button"> View Content</a>
+                <p>Showcase your projects and achievements.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Our Greenhouse</h3>
+                <a href = "shop.html" class = "content-button"> View Content</a>
+                <p>Brief information about who you are.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Services/Equipment</h3>
+                <a href = "services.html" class = "content-button"> View Content</a>
+                <p>List your key skills and expertise.</p>
+            </div>
+            <div class="footer-box">
+                <h3>Affiliates</h3>
+                <a href = "affiliates.html" class = "content-button"> View Content</a>
+                <p>View the code for the projects.</p>  
+            </div>
+            <div class="footer-box">
+                <h3>Contact Us</h3>
+                <a href = "contact.html" class = "content-button"> View Content</a>
+                <p>Provide your email or social links here.</p>
+            </div>
+        </div>
+    </footer>
+
+    <footer class="secondary-footer">
+        <p>&copy; 2025 Dirtworks. All rights reserved.</p>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+</html>
