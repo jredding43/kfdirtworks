@@ -1,0 +1,1443 @@
+
+/*=================== General Styles ===================*/
+/*=================== General Styles ===================*/
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+    color: #333;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    flex: 1;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #f9f9f9;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.social a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, text-shadow 0.4s ease, color 0.4s ease;
+}
+
+.social a i {
+    font-size: 20px;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform 0.3s ease;
+}
+
+.social a:hover i {
+    transform: scale(1.2);
+}
+
+.social a.facebook:hover {
+    color: #0077b5;
+    transform: scale(1.2);
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+    color: #005582;
+}
+
+.inventory-logo {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.inventory-logo:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* Animation for rolling off the screen */
+@keyframes roll-off {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(300%) rotate(720deg);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Class to trigger the rolling effect */
+.roll-off {
+    animation: roll-off 4s ease-in-out;
+}
+
+/*=================== SPECIAL TEXT TOP  ===================*/
+/*=================== SPECIAL TEXT TOP  ===================*/
+.specials {
+    font-size: 36px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+    animation: pulse-special 2s infinite;
+}
+
+@keyframes pulse-special {
+    0% {
+        transform: translateZ(0) scale(1);
+        
+    }
+    50% {
+        transform: translateZ(0) scale(1.05); 
+       
+    }
+    100% {
+        transform: translateZ(0) scale(1);
+        
+    }
+}
+
+
+/*=================== Hero Section Styles ===================*/
+/*=================== Hero Section Styles ===================*/
+.hero {
+    text-align: center;
+    padding: 10px 20px;
+    height: 300px;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin: 0 0 20px;
+    color: #0004fa;
+}
+
+.hero p {
+    font-size: 24px;
+    font-family: "Montserrat", "Raleway";
+    margin: 0 0 30px;
+    color: #000000;
+}
+
+.hero-index {
+    position: relative; 
+    width: 100%; 
+    min-height: 500px; 
+    background: url('../images/logos/shack.jpg') no-repeat center center/cover; 
+    background-position: 50% 60%;
+    color: #000000;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.hero-index h1 {
+    font-size: 56px;
+    margin: 0 0 20px;
+    color:  white;
+    text-shadow: 
+        -1px -1px 0 black, 
+         1px -1px 0 black, 
+        -1px  1px 0 black, 
+         1px  1px 0 black;
+}
+
+.hero-index p {
+    font-size: 24px;
+    font-family: "Montserrat", "Raleway";
+    margin: 0 0 30px;
+    color: white;
+    text-shadow: 
+        -1px -1px 0 black, 
+         1px -1px 0 black, 
+        -1px  1px 0 black, 
+         1px  1px 0 black;
+}
+
+.hero-index h2{
+    color: white;
+    padding-top: 50px;
+    margin-top: 20px;
+    text-shadow: 
+        -1px -1px 0 black, 
+         1px -1px 0 black, 
+        -1px  1px 0 black, 
+         1px  1px 0 black;
+}
+
+/* */
+
+.hero-inventory {
+    position: relative; 
+    width: 100%; 
+    min-height: 300px; 
+    background-position: 50% 60%;
+    color: #000000;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+}
+
+.hero-inventory h1 {
+    font-size: 56px;
+    margin: 0 0 20px;
+    color: #000000;
+}
+
+.hero-inventory p {
+    font-size: 24px;
+    font-family: "Montserrat", "Raleway";
+    margin: 0 0 30px;
+    color: #000000;
+}
+
+.hero-inventory h2{
+    color: #000000;
+    padding-top: 50px;
+    margin-top: 20px;
+}
+
+/* */ 
+
+.hero-contact {
+    position: relative; 
+    width: 100%; 
+    min-height: 200px; 
+    background-position: 50% 60%;
+    color: #000000;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding-top: 20px; 
+}
+
+.hero-contact h1 {
+    font-size: 56px;
+    margin: 0 0 20px;
+    color: #000000;
+}
+
+.hero-contact p {
+    font-size: 24px;
+    font-family: "Montserrat", "Raleway";
+    margin: 0 0 30px;
+    color: #000000;
+}
+
+.hero-contact h2{
+    color: #000000;
+    padding-top: 50px;
+    margin-top: 20px;
+
+}
+
+/* =================== MAIN BUTTON "Enter Our Selections" ===================*/
+/* =================== MAIN BUTTON "Enter Our Selections" ===================*/
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 50px;
+    font-size: 18px;
+    color: white;
+    background-color: #0004fa;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: pulse 3s infinite;
+    transform-origin: center;
+    will-change: transform;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #38c501;
+    transform: scale(1.1);
+    color: white;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translateZ(0) scale(1);
+        box-shadow: 0 0 5px rgba(34, 56, 255);
+    }
+    50% {
+        transform: translateZ(0) scale(1.05);
+        box-shadow: 0 0 15px rgba(34, 56, 255, 0.8);
+    }
+    100% {
+        transform: translateZ(0) scale(1);
+        box-shadow: 0 0 5px rgba(34, 56, 255);
+    }
+}
+
+/*=================== Footer Content Button ===================*/
+/*=================== Footer Content Button ===================*/
+.content-button {
+    width: 20%;
+    height: auto;
+    font-size: clamp(10px, 2vw, 12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease;
+}
+
+.content-button:hover {
+    background-color: #38c501;
+    transform: scale(1.1);
+    color: white;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #FAF0E6;
+    padding: 20px;
+    border-top: 2px solid #007BFF;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 200px;
+    max-width: 20%;
+    text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    height: 250px; 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.footer-box h3 {
+    font-size: 24px;
+    color: #007BFF;
+    margin-bottom: 10px;
+    word-wrap: break-word; 
+    text-align: center;
+    font-weight: bold;
+}
+
+.footer-box p {
+    font-size: 14px;
+    color: #555;
+    word-wrap: break-word; 
+    margin: 0;
+    line-height: 1.5; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 4; 
+    line-clamp: 4;
+    -webkit-box-orient: vertical; 
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-box {
+        max-width: 100%; 
+        min-width: 100%;
+        height: auto;
+    }
+
+    .footer-box p {
+        font-size: 12px; 
+    }
+}
+
+
+
+.secondary-footer{
+    height: 50px;
+}
+
+/*=================== Tabs and Inventory Page ===================*/
+/*=================== Tabs and Inventory Page ===================*/
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+
+.tab-button {
+    padding: 10px 20px;
+    border: none;
+    background: #007BFF;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 0 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tab-button:hover {
+    background-color: #ffae00;
+}
+
+.tab-button.active {
+    background: #38c501; 
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.sticky-tabs {
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
+    padding: 10px 0;
+}
+
+
+/*=================== Grid container for Inventory items ===================*/
+/*=================== Grid container for Inventory items ===================*/
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+    justify-content: center; 
+    margin: 20px 0; 
+}
+
+/* Individual grid items (cards) */
+.item-card {
+    flex: 1 1 calc(33.33% - 20px); 
+    max-width: calc(33.33% - 20px); 
+    text-align: center; 
+    background: #ffffff; 
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Item images */
+.item-image {
+    width: 100%; 
+    height: 100%; 
+    object-fit: fill;
+    border-radius: 8px; 
+}
+
+/* Item name */
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px; 
+    color: #333; 
+}
+
+/* Item price */
+.item-price {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007BFF; 
+    margin: 5px 0; 
+}
+
+/* Item description */
+.item-description {
+    font-size: 14px;
+    color: #555; 
+    margin-top: 5px; 
+}
+
+/* Out of Stock Overlay */
+/* General stock overlay styling */
+.stock-overlay {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+/* Specific styles for stock statuses */
+.out-of-stock {
+    background-color: red; /* Red for out-of-stock */
+}
+
+.low-stock {
+    background-color: orange; /* Orange for low-stock */
+}
+
+.coming-soon {
+    background-color: purple; /* Purple for coming-soon */
+}
+
+/* Image container with overlay */
+.image-container {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Target the placeholder image by its src */
+.item-image[src*="missing-image"] {
+    width: 600px; 
+    height: 300px;
+    max-width: 400px;
+    object-fit: contain; 
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .item-card {
+        flex: 1 1 calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .item-card {
+        flex: 1 1 100%; 
+    }
+}
+
+
+/* =================== CONTACT PAGE ===================  */
+/* =================== CONTACT PAGE ===================  */
+
+
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info h2 {
+    color: #333;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.contact-info p {
+    margin: 0 0 10px;
+    line-height: 1.6;
+}
+
+.contact-info a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.submit-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #38c501;
+}
+
+/* Popup container (hidden by default) */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content box */
+/* Popup container (hidden by default) */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Popup content box */
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.popup-content p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.popup-button {
+    padding: 10px 20px;
+    background-color: #0056b3;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.popup-button:hover {
+    background-color: #003d82;
+}
+
+
+/* =================== AFFILIATE PAGE ===================  */
+/* =================== AFFILIATE PAGE ===================  */
+
+/* General Section Styles */
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Affiliates Section */
+.section.affiliates,
+.section.stores {
+    flex: 1;
+    min-width: 100%; /* Ensure full width for centering */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Grid Layout for Cards */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust dynamically */
+    justify-content: center; /* Center the cards initially */
+    gap: 20px; /* Space between cards */
+    padding-top: 20px;
+}
+
+/* Card Styles */
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.card a:hover {
+    background-color: #38c501;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease;
+}
+
+
+/* Card Styles */
+.card-2 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.card-2 h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.card-2 img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 65px;
+    margin-bottom: 65px;
+    border-radius: 5px;
+}
+
+.card-2 p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.card-2 a {
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.card-2 a:hover {
+    background-color: #38c501;
+    transform: scale(1.1);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, text-shadow 0.5s ease;
+}
+
+/* =================== OUR GREENHOUSE ===================  */
+/* =================== OUR GREENHOUSE ===================  */
+/* General container styling */
+.construction {
+    text-align: center; /* Centers text and content inside the div */
+    font-family: Arial, sans-serif; /* Sets a clean, modern font */
+    margin: 20px 0; /* Adds vertical spacing between divs */
+}
+
+/* Bold message styling */
+.construction {
+    font-size: 24px; 
+    font-weight: bolder;
+    color: black;
+}
+
+/* Greenhouse image container */
+.greenhouse {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px; 
+    padding: 20px;
+}
+
+/* Greenhouse image styling */
+.greenhouse img {
+    max-width: 600px;
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+/* =================== SERVICES/EQUPIMENT ===================  */
+/* =================== SERVICES/EQUPIMENT ===================  */
+
+/* Service Cards Section */
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+.s-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.s-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.s-card-icon .mack {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.s-card-icon .cat {
+    width: 270px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.s-card-icon .rock {
+    width: 190px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.s-card h2 {
+    font-size: 20px;
+    color: #0004fa;
+    margin-bottom: 15px;
+}
+
+.s-card p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.truck-capacity{
+    color: #0004fa;
+}
+
+.delivery-services {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    line-height: 1.6;
+}
+
+.delivery-services h2 {
+    text-align: center;
+    color: #0004fa;
+}
+
+.delivery-services h3 {
+    margin-top: 20px;
+    color: #333;
+}
+
+.delivery-services ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    color: #555;
+}
+
+.delivery-services p {
+    margin-top: 10px;
+    color: #444;
+}
+
+
+/* =================== CHATBOT ===================  */
+/* =================== CHATBOT ===================  */
+/* General Chatbot Container */
+.chatbot-container {
+    width: 350px;
+    max-width: 90%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 1000;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hidden Chatbot */
+.chatbot-container.hidden {
+    transform: translateY(100%);
+    opacity: 0;
+    pointer-events: none;
+}
+
+/* Header Section */
+.chatbot-header {
+    background-color: #1bc8f3;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.chatbot-header h3 {
+    padding-top: 10px;
+    margin: 0;
+    font-size: 18px;
+}
+
+.chatbot-status {
+    margin-top: 5px;
+    font-size: 14px;
+    opacity: 0.8;
+    color: black;
+    font-weight: bold;
+}
+
+/* Chat Messages Section */
+.chatbot-messages {
+    flex: 1;
+    padding: 5px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chatbot-action-button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.chatbot-action-button:hover {
+    background-color: #38c501;
+    transform: scale(1.05);
+}
+
+
+
+.chatbot-bubble {
+    max-width: 80%;
+    padding-right: 7px;
+    border-radius: 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    color: #333;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #5cb85c;
+    color: white;
+    align-self: flex-end;
+}
+
+/* Input Section */
+.chatbot-input {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ddd;
+    gap: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.chatbot-input input:focus {
+    border-color: #007bff;
+}
+
+.chatbot-send-button {
+    width: 40px;
+    height: 40px;
+    background-color: #6e6e6e;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.chatbot-send-button:hover {
+    background-color: #38c501;
+}
+
+.chatbot-send-button svg {
+    fill: white;
+    width: 20px;
+    height: 20px;
+}
+
+/* Toggle Button */
+.chatbot-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #0004fa;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1100;
+}
+
+.chatbot-toggle:hover {
+    background-color: #38c501;
+}
+
+/* Scrollbar Styling */
+.chatbot-messages::-webkit-scrollbar {
+    width: 8px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb {
+    background-color: #cccccc;
+    border-radius: 4px;
+}
+
+.chatbot-messages::-webkit-scrollbar-thumb:hover {
+    background-color: #aaaaaa;
+}
+
+
+
+/* Responsive */
+/* === Global Mobile Styles === */
+@media (max-width: 768px) {
+    html, body {
+        width: 100%;
+        font-size: 14px;
+        overflow-x: hidden;
+        margin: 0;
+        padding: 0;
+    }
+
+    #root {
+        width: 100%;
+        padding: 10px;
+    }
+
+    * {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* === Navigation === */
+    .tab-nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background: #333;
+        padding: 10px 0;
+    }
+
+    .tab-nav ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+    }
+
+    .tab-item {
+        display: block;
+        text-align: center;
+        width: 100%;
+        background: #444;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 12px 24px;
+    }
+
+    .tab-item:hover {
+        background: #007bff;
+    }
+
+    .sticky-tabs {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 8px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        overflow-x: auto;
+    }
+
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        gap: 5px;
+        padding: 8px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .tab-button {
+        padding: 6px 12px; 
+        border: none;
+        background: #007BFF;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 12px;
+        transition: background-color 0.3s ease;
+        flex-grow: 1;
+        min-width: 20%; 
+        max-width: 30%;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .tab-button:hover {
+        background-color: #ffae00;
+    }
+
+    .tab-button.active {
+        background: #38c501;
+        font-weight: bold;
+    }
+
+    /* === Hero Section === */
+    .hero {
+        text-align: center;
+        padding: 10px;
+        height: 250px;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .hero p {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    /* === About Us Section === */
+    .about-us {
+        padding: 20px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .about-item {
+        max-width: 100%; /* Full width on small screens */
+    }
+
+    /* === Services Section === */
+    .service-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .service-card {
+        text-align: center;
+        padding: 15px;
+        background: #fff;
+        border: 2px solid #ffcc00;
+        border-radius: 8px;
+    }
+
+    /* === Equipment Section === */
+    .equipment-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .equipment-card {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        text-align: center;
+        border: 2px solid #ffcc00;
+        border-radius: 8px;
+    }
+
+    /* === Affiliates Section === */
+    .card-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .card {
+        text-align: center;
+        background: white;
+        border-radius: 8px;
+        padding: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        display: inline-block;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s ease;
+    }
+
+    .card a:hover {
+        background: #0056b3;
+    }
+
+    /* === CTA Section === */
+    .cta-section {
+        padding: 20px;
+    }
+
+    .cta-btn {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+    /* === Footer === */
+    .footer {
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;
+        background: #222;
+        color: white;
+    }
+
+    .footer-box {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .item-card {
+        width: 100%; 
+        height: auto; 
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .item-image {
+        width: 100%; 
+        height: 180px; 
+        object-fit: cover; 
+        border-radius: 8px;
+    }
+
+    .item-name, .item-price {
+        font-size: 16px; 
+        text-align: center;
+        margin-top: 5px;
+    }
+}
+
