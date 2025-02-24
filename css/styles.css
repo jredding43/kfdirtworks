@@ -85,6 +85,11 @@ a:hover {
     cursor: pointer;
 }
 
+.hero-inventory .prices {
+    color: red;
+    font-weight: bold;
+}
+
 /* Animation for rolling off the screen */
 @keyframes roll-off {
     0% {
