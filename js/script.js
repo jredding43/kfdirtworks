@@ -10,7 +10,7 @@ const items = {
         { name: "Fill-Dirt", displayName: "Fill Dirt", price: 15.00, stockStatus: "in-stock" },
         { name: "5-8-Minus-Crushed", displayName: "5/8 Minus Crushed", price: 32.00, stockStatus: "in-stock" },
         { name: "1-1-4-Minus-Crushed", displayName: "1-1/4 Minus Crushed", price: 32.00, stockStatus: "in-stock" },
-        { name: "Pea-Gravel-3-8", displayName: "Pea Gravel 3/8", price: 35.00, stockStatus: "in-stock" },
+        { name: "Pea-Gravel-Updated", displayName: "Pea Gravel 3/8", price: 35.00, stockStatus: "in-stock" },
         { name: "CV-Screened-Rock-1-2-1", displayName: "CV Screened Rock 1/2 - 1", price: 35.00, stockStatus: "in-stock" },
         { name: "CV-Drain-Rock-2", displayName: "CV Drain Rock 2", price: 35.00, stockStatus: "in-stock" },
         { name: "DW-Screened-Rock-1-2-1", displayName: "DW Screened Rock 1/2 -1", price: 30.00, stockStatus: "in-stock" },
