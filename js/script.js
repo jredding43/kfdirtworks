@@ -39,11 +39,11 @@ const items = {
         { name: "Montana-Rainbow-Pebble-3-4", displayName: "Montana Rainbow Pebble 3/4", price: 96.00, stockStatus: "low-stock" },
         { name: "Montana-Rainbow-Pebble-1-1-2", displayName: "Montana Rainbow Pebble 1-1/2", price: 120.00, stockStatus: "in-stock" },
         { name: "missing-image", displayName: "Montana Rainbow Pea Gravel - Sold by 5 gal Bucket Only", price: 4.00, stockStatus: "out-of-stock" }
-    ],
-    stone: [
-        { name: "missing-image", displayName: "Cobble Stone", price: 45.00, description: "Rustic cobble stones for pathways", stockStatus: "coming-soon" },
-        { name: "missing-image", displayName: "Flagstone", price: 60.00, description: "Flat stones ideal for patios", stockStatus: "coming-soon" }
     ]
+    // stone: [
+    //     { name: "missing-image", displayName: "Cobble Stone", price: 45.00, description: "Rustic cobble stones for pathways", stockStatus: "coming-soon" },
+    //     { name: "missing-image", displayName: "Flagstone", price: 60.00, description: "Flat stones ideal for patios", stockStatus: "coming-soon" }
+    // ]
 };
 
 
