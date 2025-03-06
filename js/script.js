@@ -158,6 +158,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "New landscaping stones now available!",
         "Custom soil blends for your garden!",
         "Need storage, check out our Affiliates page!",
+        "Need excavtion or machine work, Check out our Affiliates page!",
         "New inventory, come see!"
     ];
 
