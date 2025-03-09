@@ -155,7 +155,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const specialsList = [
         "OPENING APRIL 2nd",
         "Check back for our latest specials!",
-        "New landscaping stones now available!",
+        "Greenhouse coming soon!",
         "Custom soil blends for your garden!",
         "Need storage, check out our Affiliates page!",
         "Need excavtion or machine work, Check out our Affiliates page!",
