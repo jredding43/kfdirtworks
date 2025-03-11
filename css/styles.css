@@ -990,6 +990,44 @@ footer {
     color: #444;
 }
 
+/* Video Section Styling */
+.video-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f8f8f8; /* Light background for contrast */
+}
+
+.video-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333; /* Adjust text color */
+}
+
+/* Container for Videos */
+.video-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Video Styling */
+.video video {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .video-container {
+        flex-direction: column; /* Stack videos on smaller screens */
+        align-items: center;
+    }
+}
+
+
 
 /* =================== CHATBOT ===================  */
 /* =================== CHATBOT ===================  */
