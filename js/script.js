@@ -153,17 +153,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const specialsList = [
-        "OPENING WEDNES DAY MARCH 26TH",
+        "OPENING WEDNESDAY MARCH 26TH",
+        "OPENING WEDNESDAY MARCH 26TH",
         "Check back for our latest specials!",
-        "OPENING WEDNES DAY MARCH 26TH",
         "Greenhouse coming soon!",
-        "OPENING WEDNES DAY MARCH 26TH",
         "Custom soil blends for your garden!",
-        "OPENING WEDNES DAY MARCH 26TH",
         "Need storage, check out our Affiliates page!",
-        "OPENING WEDNES DAY MARCH 26TH",
         "Need excavtion or machine work, Check out our Affiliates page!",
-        "OPENING WEDNES DAY MARCH 26TH",
         "New inventory, come see!"
     ];
 
