@@ -3,26 +3,29 @@
 const items = {
     soil: [
         { name: "Soil-Conditioner", displayName: "Soil Conditioner", price: 65.00, description: "Aged bark fines + Manure", stockStatus: "in-stock" },
-        { name: "Topsoil-3way-Mix", displayName: "Standard Blend", price: 40.00, description: "60% Topsoil - 20% Soil Conditioner - 20% Sand", stockStatus: "in-stock" },
-        { name: "Garden-3way-Mix", displayName: "Garden Blend", price: 30.00, description: "70% Topsoil - 10% Soil Conditioner - 20% Sand", stockStatus: "in-stock" }
+        { name: "Topsoil-3way-Mix", displayName: "Standard Blend", price: 40.00, description: "50% Topsoil - 20% Soil Conditioner - 30% Sand", stockStatus: "in-stock" },
+        { name: "Garden-3way-Mix", displayName: "Garden Blend", price: 30.00, description: "60% Topsoil - 10% Soil Conditioner - 30% Sand", stockStatus: "in-stock" }
     ],
     gravel: [
         { name: "Fill-Dirt", displayName: "Fill Dirt", price: 15.00, stockStatus: "in-stock" },
         { name: "5-8-Minus-Crushed", displayName: "5/8 Minus Crushed", price: 32.00, stockStatus: "in-stock" },
         { name: "1-1-4-Minus-Crushed", displayName: "1-1/4 Minus Crushed", price: 32.00, stockStatus: "in-stock" },
+        { name: "missing-image", displayName: "3 Minus", price: 32.00, stockStatus: "in-stock" },
         { name: "Pea-gravel-updated", displayName: "Pea Gravel 3/8", price: 35.00, stockStatus: "in-stock" },
         { name: "CV-Screened-Rock-1-2-1", displayName: "CV Screened Rock 1/2 - 1", price: 35.00, stockStatus: "in-stock" },
         { name: "CV-Drain-Rock-2", displayName: "CV Drain Rock 2", price: 35.00, stockStatus: "in-stock" },
         { name: "DW-Screened-Rock-1-2-1", displayName: "DW Screened Rock 1/2 -1", price: 30.00, stockStatus: "in-stock" },
         { name: "DW-Screened-Rock-1-1-2-3", displayName: "DW Screened Rock 1 - 1-1/2", price: 30.00, stockStatus: "in-stock" },
         { name: "Sand", displayName: "Sand", price: 20.00, stockStatus: "in-stock" },
-        { name: "missing-image", displayName: "C33 Sand", price: 30.00, stockStatus: "coming-soon" }
+        { name: "missing-image", displayName: "C33 Sand", price: 35.00, stockStatus: "coming-soon" }
     ],
     bark: [
         { name: "Wood-Chips", displayName: "Wood Chips", price: 25.00, stockStatus: "in-stock" },
         { name: "Small-Bark", displayName: "Small Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "Medium-Bark", displayName: "Medium Bark", price: 25.00, stockStatus: "in-stock" },
-        { name: "Large-Bark", displayName: "Large Bark", price: 35.00, stockStatus: "in-stock" }
+        { name: "Large-Bark", displayName: "Large Bark", price: 35.00, stockStatus: "out-of-stock" },
+        { name: "vaagenbark.png", displayName: "Vaagen Bark", price: 25.00, stockStatus: "in-stock" },
+        { name: "darbark.png", displayName: "Dark Bark Fines", price: 35.00, stockStatus: "in-stock" }
     ],
     decorative: [
         { name: "Gray-Chip", displayName: "Gray Chip 3/4 - 1/2", price: 40.00, stockStatus: "in-stock" },
@@ -31,12 +34,14 @@ const items = {
         { name: "Grey-Dolomite", displayName: "Gray Dolomite 2 Minus", price: 60.00, stockStatus: "in-stock" },
         { name: "White-Large", displayName: "White Large 1 - 1-1/2 ", price: 75.00, stockStatus: "out-of-stock" },
         { name: "White-Medium", displayName: "White Medium 1/2 - 1", price: 80.00, stockStatus: "in-stock" },
-        { name: "White-Small", displayName: "White Small", price: 80.00, stockStatus: "in-stock" },
-        { name: "Basalt-1-1-2", displayName: "Basalt 1-1/2", price: 60.00, stockStatus: "in-stock" },
+        { name: "White-Small", displayName: "White Small", price: 65.00, stockStatus: "in-stock" },
+        { name: "Basalt-1-1-2", displayName: "Basalt 1-1/2", price: 65.00, stockStatus: "in-stock" },
+        { name: "TM-Large", displayName: "TM Rustic - Large", price: 65.00, stockStatus: "in-stock" },
+        { name: "TM-Small", displayName: "TM Rustic - Small", price: 70.00, stockStatus: "in-stock" },
         { name: "Lava-Rock", displayName: "Lava Rock", price: 90.00, stockStatus: "in-stock" },
         { name: "Eagle-Gray-Large", displayName: "Eagle Grey Large 1", price: 96.00, stockStatus: "in-stock" },
         { name: "Montana-Rainbow-Chip", displayName: "Montana Rainbow Chip", price: 95.00, stockStatus: "in-stock" },
-        { name: "Montana-Rainbow-Pebble-3-4", displayName: "Montana Rainbow Pebble 3/4", price: 96.00, stockStatus: "low-stock" },
+        { name: "Montana-Rainbow-Pebble-3-4", displayName: "Montana Rainbow Pebble 3/4", price: 120, stockStatus: "low-stock" },
         { name: "Montana-Rainbow-Pebble-1-1-2", displayName: "Montana Rainbow Pebble 1-1/2", price: 120.00, stockStatus: "in-stock" },
         { name: "missing-image", displayName: "Montana Rainbow Pea Gravel - Sold by 5 gal Bucket Only", price: 4.00, stockStatus: "out-of-stock" }
     ]
@@ -153,13 +158,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const specialsList = [
-        "OPENING WEDNESDAY MARCH 26TH",
-        "OPENING WEDNESDAY MARCH 26TH",
         "Check back for our latest specials!",
         "Greenhouse coming soon!",
         "Custom soil blends for your garden!",
         "Need storage, check out our Affiliates page!",
         "Need excavtion or machine work, Check out our Affiliates page!",
+        "Have a business and need a website, Check out our Affiliates page!",
         "New inventory, come see!"
     ];
 
