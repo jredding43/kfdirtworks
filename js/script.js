@@ -3,8 +3,8 @@
 const items = {
     soil: [
         { name: "Soil-Conditioner", displayName: "Soil Conditioner", price: 65.00, description: "Aged bark fines + Manure", stockStatus: "in-stock" },
-        { name: "Topsoil-3way-Mix", displayName: "Standard Blend", price: 40.00, description: "50% Topsoil - 20% Soil Conditioner - 30% Sand", stockStatus: "in-stock" },
-        { name: "Garden-3way-Mix", displayName: "Garden Blend", price: 30.00, description: "60% Topsoil - 10% Soil Conditioner - 30% Sand", stockStatus: "in-stock" }
+        { name: "Topsoil-3way-Mix", displayName: "Standard Blend", price: 30.00, description: "50% Topsoil - 20% Soil Conditioner - 30% Sand", stockStatus: "in-stock" },
+        { name: "Garden-3way-Mix", displayName: "Garden Blend", price: 40.00, description: "60% Topsoil - 10% Soil Conditioner - 30% Sand", stockStatus: "in-stock" }
     ],
     gravel: [
         { name: "Fill-Dirt", displayName: "Fill Dirt", price: 15.00, stockStatus: "in-stock" },
