@@ -10,22 +10,22 @@ const items = {
         { name: "Fill-Dirt", displayName: "Fill Dirt", price: 15.00, stockStatus: "in-stock" },
         { name: "5-8-Minus-Crushed", displayName: "5/8 Minus Crushed", price: 32.00, stockStatus: "in-stock" },
         { name: "1-1-4-Minus-Crushed", displayName: "1-1/4 Minus Crushed", price: 32.00, stockStatus: "in-stock" },
-        { name: "missing-image", displayName: "3 Minus", price: 32.00, stockStatus: "in-stock" },
+        { name: "3minus", displayName: "3 Minus", price: 32.00, stockStatus: "in-stock" },
         { name: "Pea-gravel-updated", displayName: "Pea Gravel 3/8", price: 35.00, stockStatus: "in-stock" },
         { name: "CV-Screened-Rock-1-2-1", displayName: "CV Screened Rock 1/2 - 1", price: 35.00, stockStatus: "in-stock" },
         { name: "CV-Drain-Rock-2", displayName: "CV Drain Rock 2", price: 35.00, stockStatus: "in-stock" },
         { name: "DW-Screened-Rock-1-2-1", displayName: "DW Screened Rock 1/2 -1", price: 30.00, stockStatus: "in-stock" },
         { name: "DW-Screened-Rock-1-1-2-3", displayName: "DW Screened Rock 1 - 1-1/2", price: 30.00, stockStatus: "in-stock" },
         { name: "Sand", displayName: "Sand", price: 20.00, stockStatus: "in-stock" },
-        { name: "missing-image", displayName: "C33 Sand", price: 35.00, stockStatus: "coming-soon" }
+        { name: "c33", displayName: "C33 Sand", price: 35.00, stockStatus: "in-stock" }
     ],
     bark: [
-        { name: "Wood-Chips", displayName: "Wood Chips", price: 25.00, stockStatus: "in-stock" },
+        { name: "Wood-Chips", displayName: "Wood Chips", price: 35.00, stockStatus: "in-stock" },
         { name: "Small-Bark", displayName: "Small Bark", price: 35.00, stockStatus: "in-stock" },
-        { name: "Medium-Bark", displayName: "Medium Bark", price: 25.00, stockStatus: "in-stock" },
+        { name: "Medium-Bark", displayName: "Medium Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "Large-Bark", displayName: "Large Bark", price: 35.00, stockStatus: "out-of-stock" },
-        { name: "vaagenbark.png", displayName: "Vaagen Bark", price: 25.00, stockStatus: "in-stock" },
-        { name: "darbark.png", displayName: "Dark Bark Fines", price: 35.00, stockStatus: "in-stock" }
+        { name: "vaagenbark.png", displayName: "Vaagen Bark", price: 35.00, stockStatus: "in-stock" },
+        { name: "darbark.png", displayName: "Dark Bark Fines", price: 30.00, stockStatus: "in-stock" }
     ],
     decorative: [
         { name: "Gray-Chip", displayName: "Gray Chip 3/4 - 1/2", price: 40.00, stockStatus: "in-stock" },
