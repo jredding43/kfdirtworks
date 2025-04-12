@@ -24,8 +24,8 @@ const items = {
         { name: "Small-Bark", displayName: "Small Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "Medium-Bark", displayName: "Medium Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "Large-Bark", displayName: "Large Bark", price: 35.00, stockStatus: "in-stock" },
-        { name: "vaagen.png", displayName: "Vaagen Bark", price: 35.00, stockStatus: "in-stock" },
-        { name: "darbark.png", displayName: "Dark Bark Fines", price: 30.00, stockStatus: "in-stock" }
+        { name: "vaagen", displayName: "Vaagen Bark", price: 35.00, stockStatus: "in-stock" },
+        { name: "dark_bark", displayName: "Dark Bark Fines", price: 30.00, stockStatus: "in-stock" }
     ],
     decorative: [
         { name: "Gray-Chip", displayName: "Gray Chip 3/4 - 1/2", price: 40.00, stockStatus: "in-stock" },
