@@ -23,7 +23,7 @@ const items = {
         { name: "Wood-Chips", displayName: "Wood Chips", price: 35.00, stockStatus: "in-stock" },
         { name: "Small-Bark", displayName: "Small Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "Medium-Bark", displayName: "Medium Bark", price: 35.00, stockStatus: "in-stock" },
-        { name: "Large-Bark", displayName: "Large Bark", price: 35.00, stockStatus: "out-of-stock" },
+        { name: "Large-Bark", displayName: "Large Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "vaagenbark.png", displayName: "Vaagen Bark", price: 35.00, stockStatus: "in-stock" },
         { name: "darbark.png", displayName: "Dark Bark Fines", price: 30.00, stockStatus: "in-stock" }
     ],
