@@ -41,8 +41,8 @@ const items = {
         { name: "Lava-Rock", displayName: "Lava Rock", price: 90.00, stockStatus: "in-stock" },
         { name: "Eagle-Gray-Large", displayName: "Eagle Grey Large 1", price: 96.00, stockStatus: "in-stock" },
         { name: "Montana-Rainbow-Chip", displayName: "Montana Rainbow Chip", price: 95.00, stockStatus: "in-stock" },
-        { name: "Montana-Rainbow-Pebble-3-4", displayName: "Montana Rainbow Pebble 3/4", price: 120, stockStatus: "out-of-stock" },
-        { name: "Montana-Rainbow-Pebble-1-1-2", displayName: "Montana Rainbow Pebble 1-1/2", price: 120.00, stockStatus: "out-of-stock" },
+        { name: "Montana-Rainbow-Pebble-3-4", displayName: "Montana Rainbow Pebble 3/4", price: 120, stockStatus: "in-stock" },
+        { name: "Montana-Rainbow-Pebble-1-1-2", displayName: "Montana Rainbow Pebble 1-1/2", price: 120.00, stockStatus: "in-stock" },
         { name: "missing-image", displayName: "Montana Rainbow Pea Gravel - Sold by 5 gal Bucket Only", price: 4.00, stockStatus: "out-of-stock" }
     ]
     // stone: [
